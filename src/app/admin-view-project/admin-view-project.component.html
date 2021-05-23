@@ -1,0 +1,70 @@
+<div class="row">
+    <div class="col-md-2  col-sm-1 ">
+        <app-admin-dashboard></app-admin-dashboard>
+    </div>
+    <div class="col-md-9  col-sm-9  " d-flex justify-content-center text-center >
+        <br>
+        <!-- <mat-form-field>
+            <input matInput  (keyup)="applyFilterGlobal($event.target.value?)" placeholder="Filter">
+          </mat-form-field> -->
+          <!-- (keyup)="applyFilter($event.target.value)" -->
+        <table mat-table [dataSource]="dataSource" id  ="view-table" mat-sort>
+
+            <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+            <!-- Position Column -->
+            <ng-container matColumnDef="position">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Sr. No. </th>
+                <td mat-cell *matCellDef="let element; let i = index"> {{i+1}} </td>
+            </ng-container>
+
+            <!-- Name Column -->
+            <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+                <td mat-cell *matCellDef="let element"> {{element.projectName}}  </td>
+            </ng-container>
+
+            <!-- Weight Column -->
+            <ng-container matColumnDef="description">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Description </th>
+                <td mat-cell *matCellDef="let element"> {{element.projectDescription}} </td>
+            </ng-container>
+            <!-- Weight Column -->
+            <ng-container matColumnDef="language" mat-sort-header>
+                <th mat-header-cell *matHeaderCellDef> Language </th>
+                <td mat-cell *matCellDef="let element"> {{element.projectLanguage}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="tool">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Tool </th>
+                <td mat-cell *matCellDef="let element"> {{element.projectTool}} </td>
+            </ng-container>
+            <ng-container matColumnDef="link">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Link </th>
+                <td mat-cell *matCellDef="let element"> {{element.projectLink}} </td>
+            </ng-container>
+            <ng-container matColumnDef="image">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Image  </th>
+                <td mat-cell *matCellDef="let element"> <img  class  = "img img-responsive" id  = "myImage" src={{element.projectImagePath}}> </td>
+            </ng-container>
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="action">
+                <th mat-header-cell *matHeaderCellDef> Action </th>
+                <td mat-cell *matCellDef="let element"> <a routerLink =  "/add-project/{{element.projectId}}"  >
+                        <mat-icon>edit</mat-icon>
+                    </a>  <a (click)="deleteProjectById(element)">
+                        <mat-icon>delete</mat-icon>
+                    </a></td>
+            </ng-container>
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+        <mat-paginator   [pageSize]="5" [pageSizeOptions]="[5, 10, 25]" 
+        showFirstLastButtons>
+        </mat-paginator>
+        <button matInput (click) = "exportTable()"  class="btn">Export to Excel</button>
+    </div>
+    
+    <div class =  " col-sm-2"></div>
+</div>

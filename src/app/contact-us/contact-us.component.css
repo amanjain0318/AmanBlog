@@ -1,0 +1,27 @@
+mat-card{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 50%;
+}
+form{
+    padding: 2%;
+}
+button{
+    margin: 1%;
+    background-color: #86C232;
+    color: #222629 ;  
+}
+
+.full-width{
+    margin-left: 10%;
+    min-width: 100%;
+}
+.form-group{
+    width: 75%;
+}
+textarea{
+    min-height: 50px;
+}
+#toast-container > div {
+    opacity:1;
+}

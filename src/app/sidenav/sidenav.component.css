@@ -1,0 +1,25 @@
+mat-nav-list{
+    background-color: #86C232;
+    color: #222629 ;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+span:hover {
+    color: #86C232;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #222629 ;
+} 
+
+
+.nav-caption{
+    display: inline-block;
+    padding-left: 6px;
+}

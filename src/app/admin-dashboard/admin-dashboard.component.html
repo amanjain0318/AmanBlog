@@ -1,0 +1,55 @@
+<mat-selection-list *ngIf  =  "this.user.userSession;">
+    
+    <a mat-list-item routerLink="/admin-personal-detail"    class =  'img-rounded'>
+        
+            <img mat-button matTooltip="{{user.userName}} , {{user.userDesignation}}" 
+            [matTooltipPosition]="position.value"
+            aria-label="Button that displays a tooltip when focused or hovered over"
+             class =  'img img-responsive img-rounded' src = {{user.userImagePath}}>
+    </a>
+   
+    <a mat-list-item routerLink="/add-menu">
+        <span class="nav-caption">Add Menu</span>
+    </a>
+    <a mat-list-item routerLink="/view-menu">
+        <span class="nav-caption">List Menu</span>
+    </a>
+    <a mat-list-item routerLink="/add-project">
+        <span class="nav-caption">Add Project</span>
+    </a>
+    <a mat-list-item routerLink="/view-project">
+        <span class="nav-caption">List Project</span>
+    </a>
+    <a mat-list-item routerLink="/add-about">
+        <span class="nav-caption">Add About</span>
+    </a>
+    <a mat-list-item routerLink="/view-about">
+        <span class="nav-caption">List About</span>
+    </a>
+    <a mat-list-item routerLink="/add-testimonial">
+        <span class="nav-caption">Add Testimonials</span>
+    </a>
+    <a mat-list-item routerLink="/view-testimonial">
+        <span class="nav-caption">List Testimonials</span>
+    </a>
+    <a mat-list-item routerLink="/view-comment">
+        <span class="nav-caption">View Comment</span>
+    </a>
+    <a mat-list-item routerLink="/respond-comment">
+        <span class="nav-caption">Respond Comment</span>
+    </a>
+    <a mat-list-item (click) =  "logout()">
+        <span class="nav-caption">Logout</span>
+    </a>
+    <a mat-list-item routerLink="/login">
+        <span>
+            <mat-icon>login</mat-icon>
+        </span>
+    </a>
+</mat-selection-list>
+<!-- <ng-template #elseTemplate>
+    <p>Not a Autorized User<br><br>
+        <a  mat-raised-button routerLink  =  "/dashboard">Go to Home</a>
+    </p>
+    
+</ng-template> -->

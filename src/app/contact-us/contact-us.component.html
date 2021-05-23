@@ -1,0 +1,40 @@
+<div class="container-fluid d-flex justify-content-center text-center">
+    <mat-card class="my-card mat-elevation-z8">
+        <mat-card-content>
+        <h1>Contact Us</h1> 
+        <span>Got a question? We'd love to hear from you.</span><br>
+        <form class="my-form"  [formGroup]="contactForm" (ngSubmit)="addClientComment()">
+         <div class="form-group" >
+          <mat-form-field class="full-width">
+             <mat-label>Name</mat-label>
+             <input matInput  placeholder="Name" formControlName="customerName"   >
+          </mat-form-field>
+          </div>
+          <div class="form-group">
+          <mat-form-field class="full-width">
+            <mat-label>Email</mat-label>
+            <input matInput    placeholder="Email" formControlName="customerEmail"  >
+         </mat-form-field>
+         </div>
+         <div class="form-group">
+         <mat-form-field class="full-width">
+            <mat-label>Comment</mat-label>
+            <textarea matInput 
+            placeholder="Comment"  formControlName  = "customerComment"  rowa = "5">
+         </textarea>
+         </mat-form-field>
+         </div>
+         
+         <!-- <mat-form-field class="full-width">
+            <mat-label>When can we call you?</mat-label>
+            <input matInput    placeholder="date" name="ClientDate" >
+         </mat-form-field> -->
+         <br>
+    <button mat-raised-button type  =  "submit" >Send Message</button>
+ </form>
+ </mat-card-content>
+ </mat-card> 
+         
+  
+  </div>
+  

@@ -1,0 +1,29 @@
+<div class="mat-app-background">
+    <!-- Toolbar -->
+
+    <mat-toolbar>
+        <div fxHide.gt-xs>
+            <button mat-icon-button (click)="onToggleSideNav()">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </div>
+        <div>
+            <a routerLink='/dashboard'><img class  =  "img img-responsive logo-image" width =   "50px" src = "assets/image/Site_Logo.jpeg">{{title}}</a>
+        </div>
+        <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+            <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+                <li *ngFor="let menu of menus">
+                    <a routerLink="{{menu.menuLink}}" *ngIf="menu.menuName!=='Dashboard'">{{menu.menuName}}</a>
+                    <a routerLink="{{menu.menuLink}}"
+                        *ngIf="menu.menuName==='Dashboard' && this.user===null">{{menu.menuName}}</a>
+                   <a routerLink="/admin/dashboard" ><span *ngIf="menu.menuName==='Dashboard' && this.user!==null">{{user?.userName}}</span></a>
+                </li>
+                
+            </ul>
+        </div>
+    </mat-toolbar>
+    <!-- <button (click) ="sidenav.toggle()"> Toggle Button</button> -->
+</div>
+<ngx-spinner bdColor="rgba(51, 51, 51, 0.8)"  color =  "#86C232" size="large" type="ball-atom">  
+    <p style="color: #86C232; margin-top: 50%; font-size: large;">Please Wait... </p>  
+    </ngx-spinner> 

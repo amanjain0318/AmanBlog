@@ -1,0 +1,22 @@
+<!-- <h1>{{title}}</h1>
+<nav>
+    <a routerLink="/dashboard">Dashboard</a><br>
+    <a routerLink="/heroes">Heroes</a><br>
+    <a routerLink="/header">Header</a>
+  </nav> -->
+
+  <mat-sidenav-container>
+    <mat-sidenav  mode  =  "side"   #sidenav> 
+      <app-sidenav (sidenavClose) =  "sidenav.close()"></app-sidenav>
+    </mat-sidenav> 
+    <mat-sidenav-content>
+        <app-header (sidenavToggle) =  "sidenav.toggle()" [title]="title" ></app-header>
+        <main>
+          <router-outlet ></router-outlet>
+        </main>
+         <app-footer></app-footer> 
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+
+  
+

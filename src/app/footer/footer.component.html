@@ -1,0 +1,57 @@
+<footer class=" text-center text-lg-start ">
+    <!-- Grid container -->
+    <div class="container ">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <!-- <h5 class="text-uppercase">Footer Content</h5> -->
+          <br>
+          <p>
+            This is my First website and I want to make it as cool as I can !!! Please visit it completely and don't forget to leave your valuable comment that motivates me to do more
+          </p>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Navigate</h5>
+  
+          <ul class="list-unstyled mb-0" >
+            <li *ngFor="let menu of menus">
+              <a routerLink="{{menu.menuLink}}" *ngIf="menu.menuName!=='Dashboard'">{{menu.menuName}}</a>
+              <a routerLink="{{menu.menuLink}}"
+                  *ngIf="menu.menuName==='Dashboard' && this.Loginuser===null">Login</a>
+             <a routerLink="/admin/dashboard" ><span *ngIf="menu.menuName==='Dashboard' && this.Loginuser!==null">Admin Dashboard</span></a>
+          </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 ">
+          <h5 class="text-uppercase ">Social Media</h5>
+  
+          <ul class="list-unstyled">
+            <li >
+              <a href ={{user.userFbLink}}  target = "blank">Facebook</a>
+            </li>
+            <li>
+              <a  href =  {{user.userLkdinLink}} target = "blank">Linked In</a>
+            </li>
+            <li>
+              <a  href =  {{user.userGitLink}}  target = "blank">Github</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <hr>
+      <p id ="copyright">Copyright 2021 | Aman Jain , Project Engineer , Wipro</p>
+      <!--Grid row-->
+  
+    </div>
+    <!-- Grid container -->
+  
+    
+  </footer>

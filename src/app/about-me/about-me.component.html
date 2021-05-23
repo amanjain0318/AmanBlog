@@ -1,0 +1,70 @@
+<section id="section1">
+    <div class="container-fluid">
+        <div class="card" *ngFor = "let aboutItem of about; index as i  even as e odd as o" >
+            <div class="row "  *ngIf  =  "o">
+                <div class="col-md-4">
+                    <img class="img-fluid" alt="100%x240"
+                        [src]=aboutItem.aboutMeImagePath>
+                </div>
+                <div class="col-md-8">
+                    <br>    
+                    <h2>{{aboutItem.aboutMeTitle}} </h2>
+                    <h2>{{aboutItem.aboutMeDescription}}</h2>
+                </div>
+                </div>
+                <div class="row" *ngIf = "e">
+                <div class="col-md-8">
+                    <br>    
+                    <h2>{{aboutItem.aboutMeTitle}} </h2>
+                    <h2>{{aboutItem.aboutMeDescription}}</h2>
+                </div>
+                <div class="col-md-4"   >
+                    <img class="img-fluid" alt="100%x240"
+                        [src]=aboutItem.aboutMeImagePath>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="row">    
+        <div class="col-md-11 " d-flex justify-content-center text-center >
+            <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" id  ="view-table">
+    
+                <ng-container matColumnDef="SNO">
+                    <th mat-header-cell *matHeaderCellDef> Sr. No. </th>
+                    <td mat-cell *matCellDef="let element; let i  =  index;">  {{i+1}} </td>
+                </ng-container>
+    
+             
+                <ng-container matColumnDef="CountryCode">
+                    <th mat-header-cell *matHeaderCellDef> Country Code</th>
+                    <td mat-cell *matCellDef="let element;">  {{element.countryCode}} </td>
+                </ng-container>
+    
+                <ng-container matColumnDef="CountryName">
+                    <th mat-header-cell *matHeaderCellDef> Country Name </th>
+                    <td mat-cell *matCellDef="let element"> {{element.countryName}} </td>
+                </ng-container>
+    
+
+                <ng-container matColumnDef="Published Date">
+                    <th mat-header-cell *matHeaderCellDef> Published Date  </th>
+                    <td mat-cell *matCellDef="let element"> {{element.publishedDate}} </td>
+                </ng-container>
+    
+      
+                <ng-container matColumnDef="Alert Message">
+                    <th mat-header-cell *matHeaderCellDef> Alert </th>
+                    <td mat-cell *matCellDef="let element"> {{element.alertMessage}} </td>
+                </ng-container>
+    
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+            <mat-paginator #paginator [pageSize]="'25'" [pageSizeOptions]="[5, 10, 25]" 
+            showFirstLastButtons>
+            </mat-paginator>
+        </div>
+        
+    </div> -->
+    
+</section>

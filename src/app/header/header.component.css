@@ -1,0 +1,42 @@
+.logo-image{
+    border-radius: 50%;
+    margin-right: 5%;
+}
+button{
+    color: #86C232;
+}
+mat-sidenav-container{
+    height:  100%;
+}
+mat-sidenav ,  mat-sidenav-content{
+    padding:  10px;
+}
+mat-sidenav
+{
+    
+    color: red;
+    width:  250px;
+}
+mat-sidenav-content{
+    background-color:   white;
+
+}
+
+a, span{
+    text-decoration: none;
+    color:#86C232 ;
+}
+mat-icon{
+    text-align: inherit;
+}
+
+.navigation-items{
+    align-items: flex-end;
+    
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.mat-toolbar-row, .mat-toolbar-single-row {
+    background-color:  #222629;
+}

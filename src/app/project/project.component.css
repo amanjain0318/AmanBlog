@@ -1,0 +1,38 @@
+button{
+    background-color:#222629;
+    color: #86C232;
+}
+a{
+    text-decoration:  none;
+    color: #86C232;
+}
+   
+
+.example-card{
+    margin-top: 2%;
+    margin-bottom: 8%;
+    text-align: center;
+    background-color: #86C232;
+    color: #222629 ;
+  
+  }   
+mat-card-header{
+  
+    text-align:  center;
+  }
+  mat-card-title{
+    text-align:  center;
+   font-size: xx-small;
+   height: 50px;
+  }
+  
+  .projectDesc{
+    margin-top: 1%;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    height: 35px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+  }

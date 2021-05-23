@@ -1,0 +1,45 @@
+
+.full-width{
+    min-width: 75%;
+}
+button{
+    margin: 1%;
+    background-color: #86C232;
+    color: #222629 ;
+  
+}
+ng-container{
+margin-right: 2%;
+}
+#view-table   {
+    margin-right: 2%;
+    width: 100%;
+    overflow: auto;
+    max-height: min-content;
+  }
+  td.mat-cell  , th.mat-header-cell{
+      margin-left: 1%;
+      margin-right: 1%;
+      padding-left: 1%;
+      padding-right: 1%;
+
+  }
+  th.mat-header-cell{
+      font-size: medium;
+  }
+  mat-paginator{
+      margin-bottom: 2%;
+  }
+  th{
+    color: #86C232;
+    background-color: #222629 ;
+  }
+  
+  #myImage {
+    width: 75px;
+    height: 75px;
+}
+a{
+    text-decoration: none;
+    color: #222629;
+}

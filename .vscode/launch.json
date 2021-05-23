@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-msedge",
+            "request": "launch",
+            "name": "Open header.component.html",
+            "file": "c:\\Users\\AM20098888\\Desktop\\My Folder\\Angular Learn\\AmanBlog\\src\\app\\header\\header.component.html"
+        }
+    ]
+}

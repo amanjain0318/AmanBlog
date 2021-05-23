@@ -1,0 +1,121 @@
+/* DashboardComponent's private CSS styles */
+#section3, #section4{
+  margin-top: 1%;
+}
+#section2{
+  margin-top: -10%;
+}
+.card-body{
+    text-align: center;
+}
+.name-span{
+  font-size: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#about-me-card {
+  margin-top: 20%;
+  margin-left: -7%;
+  height: 75%;
+
+}
+.card-text{
+  font-weight: bold;
+  color: #222629 ;
+}
+h2, h1 , h5{
+    text-align: center;
+    color: #61892F;
+}
+h4 {
+  
+  color: #61892F;
+  font-weight: bold;
+  font-size: 150%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#viewMore{
+  margin-left: 80%;
+  margin-left: 80%;
+}
+button{
+  color: #86C232;
+  background-color: #222629 ;
+}
+a{
+  text-decoration:  none;
+  color:#86C232;
+}
+
+mat-carousel {
+  color:#86C232; 
+
+}
+.example-card{
+  margin-top: 2%;
+  margin-bottom: 8%;
+  text-align: center;
+  background-color: #86C232;
+  color: #222629 ;
+
+}   
+mat-card-header{
+  text-align:  center;
+}
+mat-card-title{
+  text-align:  center;
+ font-size: xx-small;
+ height: 50px;
+}
+
+.projectDesc{
+  margin-top: 1%;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  height: 35px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+/*
+.heroes-menu {
+    padding: 0;
+    margin: auto;
+    max-width: 1000px;
+  
+    /* flexbox 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  a {
+    background-color: #3f525c;
+    border-radius: 2px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    min-width: 70px;
+    margin: .5rem auto;
+    box-sizing: border-box;
+  
+    /* flexbox 
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+  }
+  
+  @media (min-width: 600px) {
+    a {
+      width: 18%;
+      box-sizing: content-box;
+    }
+  } 
+  */

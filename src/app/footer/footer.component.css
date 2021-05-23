@@ -1,0 +1,22 @@
+footer{
+    padding-top:  5%;
+    padding-left:  5%;
+    padding-right:  5%;
+    padding-bottom: 2%;
+    background-color: #222629 ;
+    color: #86C232; 
+}
+ a{
+    color: #86C232;
+}
+li , h5{
+    text-align: left;
+    margin-left: 30%;
+}
+
+.mat-icon{
+    margin-top: 10px;
+}
+#copyright{
+    color: honeydew;
+}
